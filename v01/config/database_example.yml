@@ -1,0 +1,36 @@
+# PowerRuby Ltd
+#
+# Home Page
+#   http://powerruby.com/
+#
+#
+default: &default
+  adapter: irubydb
+  database: '*LOCAL'
+  username: '*CURRENT'
+  password: ''
+  default_schema: 'POWER_DATA'
+#############################################
+# journalling:
+#   :jrn:          'PRUBYJRN
+#   :jrn_lib:      'POWER_DATA'
+#   :images:       '*BOTH'
+#   :omtjrne:      '*NONE'
+#   :loglvl:       '*ERRORS'
+#############################################
+# connect_options:
+#   :SQL_TXN_ISOLATION: SQL_TXN_NO_COMMIT
+#   :SQL_ATTR_AUTOCOMMIT: SQL_TRUE
+#############################################
+# schema_dump_options:
+#   :ccsid_to_omit: 37
+#   :iruby_db_column_extensions: false
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
