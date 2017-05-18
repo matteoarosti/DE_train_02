@@ -16,9 +16,13 @@
 /node_modules
 /yarn-error.log
 
+# Ignore joe file copies
 *~
 
+# Avoid publishing local schema
 /db/schema.rb
+
+# Use database_example.yml only
 /config/database.yml
 
 .byebug_history
