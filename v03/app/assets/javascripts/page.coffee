@@ -4,9 +4,6 @@
 
 App.cable.subscriptions.create "WebNotificationsChannel",
   # Called when subscription is ready for use on the server
-  connected: ->
-    $(document).alert("Pronto")
-
   received: (data) ->
-    $(document).alert("Ciao")  
+    $('#messages').append data['message']  
       
