@@ -9,6 +9,24 @@
   </head>
 
   <body>
-    <%= yield %>
+  
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="col-lg-8 black text-center"><%= yield %></div>
+    <div class="col-lg-4 grey text-center">
+
+		  <h2>Action Cable Messages</h2>
+		  <div class="panel panel-default">
+		    <div class="panel-heading">WebNotificationsChannel</div>
+		    <div class="panel-body">Panel Content</div>
+		    <div id='messages' class="panel-body"></div>
+		  </div>
+
+    
+    </div>
+  </div>
+</div>
+
   </body>
 </html>

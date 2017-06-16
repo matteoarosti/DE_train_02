@@ -22,3 +22,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+rails generate scaffold Organizer name description:text
+rails generate scaffold Event name organizer:references
+rails generate scaffold Speaker first_name last_name birth_year:decimal
+rails generate scaffold Session topic description:text event:references speaker:references 
