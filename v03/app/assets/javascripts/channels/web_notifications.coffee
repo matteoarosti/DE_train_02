@@ -2,6 +2,7 @@ App.web_notifications = App.cable.subscriptions.create "WebNotificationsChannel"
   connected: ->
     # Called when the subscription is ready for use on the server
     console.log('connectedddddd');
+    @perform 'test01', message: 'ciao'
 
   disconnected: ->
     # Called when the subscription has been terminated by the server

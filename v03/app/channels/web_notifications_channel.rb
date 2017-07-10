@@ -6,4 +6,9 @@ class WebNotificationsChannel < ApplicationCable::Channel
   def unsubscribed	
     # Any cleanup needed when channel is unsubscribed
   end
+  
+  def test01(data)
+    logger.info data.to_yaml 
+  end
+  
 end
